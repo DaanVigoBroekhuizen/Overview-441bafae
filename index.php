@@ -33,8 +33,7 @@
  }
 
  $stmt = $pdo->query('SELECT * FROM series');
- while ($row = $stmt->fetch())
- {
+ while ($row = $stmt->fetch()) {
         ?>
     <tr>
         <td><?= $row['title']?></td>
