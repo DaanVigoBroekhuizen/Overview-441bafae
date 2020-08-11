@@ -35,7 +35,7 @@
  $stmt = $pdo->query('SELECT * FROM series');
  while ($row = $stmt->fetch())
  {
-     ?>
+        ?>
     <tr>
         <td><?= $row['title']?></td>
         <td><?= $row['rating']?></td>
@@ -55,15 +55,15 @@
 
 <?php
     $stmt = $pdo->query('SELECT * FROM movies');
- while ($row = $stmt->fetch())
+while ($row = $stmt->fetch())
  {
-     ?>
+    ?>
     <tr>
         <td><?= $row['title']?></td>
         <td><?= $row['duur']?></td>
     </tr>
      <?php
      //echo $row['title']. $row['rating']. "\n";
- }
-    ?>
+}
+?>
 </table>
